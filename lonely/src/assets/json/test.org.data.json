@@ -1,0 +1,55 @@
+{
+    "status": 200,
+    "message": "当前条件没有查询到数据",
+    "errors": null,
+    "data":{
+        "currentPage":0,
+        "pageSize":10,
+        "pageCount":"4",
+        "totalRows":36,
+        "innerData":[{
+            "orgNo":"1",
+            "orgName":"华润"
+        },{
+            "orgNo":"2",
+            "orgName":"华润"
+        },{
+            "orgNo":"3",
+            "orgName":"华润"
+        },{
+            "orgNo":"4",
+            "orgName":"华润"
+        },{
+            "orgNo":"5",
+            "orgName":"华润发二娃"
+        },{
+            "orgNo":"6",
+            "orgName":"华润发文"
+        },{
+            "orgNo":"7",
+            "orgName":"爱疯舞"
+        },{
+            "orgNo":"8",
+            "orgName":"阿发323"
+        },{
+            "orgNo":"9",
+            "orgName":"分为2324"
+        },{
+            "orgNo":"10",
+            "orgName":"分为2324"
+        },{
+            "orgNo":"11",
+            "orgName":"分为2324"
+        },{
+            "orgNo":"12",
+            "orgName":"分为2324"
+        },{
+            "orgNo":"13",
+            "orgName":"分为2324"
+        },{
+            "orgNo":"14",
+            "orgName":"分为2324"
+        }]
+    }
+
+}
