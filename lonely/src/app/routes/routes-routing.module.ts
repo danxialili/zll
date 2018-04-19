@@ -58,6 +58,7 @@ const routes: Routes = [
     { path: '**', redirectTo: 'dashboard' }
 ];
 
+
 @NgModule({
     imports: [RouterModule.forRoot(routes, { useHash: environment.useHash })],
     exports: [RouterModule]
