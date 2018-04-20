@@ -4,14 +4,14 @@ import {SimpleTableColumn, SimpleTableComponent} from '@delon/abc';
 
 @Component({
     selector:'demo-table',
-    // templateUrl:'./demo-table.component.html'
-    template: `<simple-table [data]="url" [extraParams]="params" [total]="total" [columns]="columns"
-                [resReName]="{list: 'results' }"></simple-table>`
+    templateUrl:'./demo-table.component.html'
+    // template: `<simple-table [data]="url" [total]="total" [columns]="columns"
+    //             [resReName]="{list: 'results' }"></simple-table>`
 })
 export class DemoTableComponent{
-    url = `https://randomuser.me/api/?results=3`;
+    url =' https://randomuser.me/api/?results=3';
     // url:string = "/assets/josn/test.org.data.json";
-    params = { a: 1, b: 2 };
+    // params = { a: 1, b: 2 };
     // mock
     total = 50;
     columns: SimpleTableColumn[] = [
@@ -19,7 +19,17 @@ export class DemoTableComponent{
         { title: '头像', type: 'img', width: '50px', index: 'picture.thumbnail' },
         { title: '邮箱', index: 'email' },
         { title: '电话', index: 'phone' },
-        { title: '注册时间', type: 'date', index: 'registered' }
+        { title: '注册时间', type: 'date', index: 'registered' },
+        { title: '按钮',
+                buttons:[
+                    {
+                        text: '编辑',
+                        hide:true,
+                        click:((row:any)=>{
+                            console.log('row::::',row);
+                        }).bind(this)
+                    }]
+        }
     ];
 
 
@@ -27,7 +37,8 @@ export class DemoTableComponent{
 
     // @ViewChild('table') table: SimpleTableComponent;
     //
-    // public url:string = "/assets/josn/test.org.data.json";
+    // // public url:string = "/assets/josn/test.org.data.json";
+    // url = `https://randomuser.me/api/?results=3`;
     // public htmlStr:string = "<div>123123123</div>";
     //
     // constructor(public http:HttpClient){}

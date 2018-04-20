@@ -13,13 +13,13 @@ import { CallbackComponent } from './callback/callback.component';
 import { Exception403Component } from './exception/403.component';
 import { Exception404Component } from './exception/404.component';
 import { Exception500Component } from './exception/500.component';
-import {DemoTableComponent} from './table/demo-table.component';
+import {DemoTableComponent} from './table/sim-table/demo-table.component';
 
 @NgModule({
     imports: [ SharedModule, RouteRoutingModule ],
     declarations: [
         DashboardComponent,
-        DemoTableComponent,                        //table模块
+        // DemoTableComponent,                        //table模块
         // passport pages
         UserLoginComponent,
         UserRegisterComponent,

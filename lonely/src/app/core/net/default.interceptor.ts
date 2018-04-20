@@ -69,6 +69,7 @@ export class DefaultInterceptor implements HttpInterceptor {
         });
         return next.handle(newReq).pipe(
                     mergeMap((event: any) => {
+                        console.log('event:::',event);
                         // 允许统一对请求错误处理，这是因为一个请求若是业务上错误的情况下其HTTP请求的状态是200的情况下需要
                         if (event instanceof HttpResponse && event.status === 200)
                             return this.handleData(event);

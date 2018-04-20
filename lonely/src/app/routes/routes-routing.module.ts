@@ -16,7 +16,8 @@ import { CallbackComponent } from './callback/callback.component';
 import { Exception403Component } from './exception/403.component';
 import { Exception404Component } from './exception/404.component';
 import { Exception500Component } from './exception/500.component';
-import {DemoTableComponent} from './table/demo-table.component';
+import {DemoTableComponent} from './table/sim-table/demo-table.component';
+import {TableModule} from "./table/table.module";
 
 const routes: Routes = [
     {
@@ -25,7 +26,8 @@ const routes: Routes = [
         children: [
             { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
             { path: 'dashboard', component: DashboardComponent, data: { title: '蒲公英' } }, // 这里title指浏览器标题
-            { path: 'table', component: DemoTableComponent, data: { title: '蒲公英' } }, // 这里title指浏览器标题
+            { path: 'table', loadChildren: './table/table.module#TableModule' },
+            // { path: 'table', component: DemoTableComponent, data: { title: '蒲公英' } }, // 这里title指浏览器标题
 
             // 业务子模块
             // { path: 'widgets', loadChildren: './widgets/widgets.module#WidgetsModule' }

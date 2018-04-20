@@ -89,8 +89,12 @@ export class StartupService {
                     },
                     {
                         text: 'table表格',
-                        link: '/table',
-                        icon: 'anticon anticon-appstore-o'
+                        // link: '/table',
+                        icon: 'anticon anticon-appstore-o',
+                        children: [
+                            { text: 'Sim Tab', link: '/table/simtable' },
+                            { text: 'ExpandTab', link: '/table/expandtable' }
+                        ]
 
                     },
                     {

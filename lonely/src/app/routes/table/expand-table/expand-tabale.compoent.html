@@ -1,0 +1,5 @@
+<simple-table #st [data]="users" [ps]="3" [columns]="columns">
+    <ng-template #expand let-item let-index="index" let-column="column">
+        {{ item.description }}
+    </ng-template>
+</simple-table>

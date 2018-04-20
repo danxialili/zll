@@ -1,5 +1,15 @@
 <button >查询</button>
 
+<simple-table [data]="url" [total]="total" [columns]="columns"
+              [resReName]="{list: 'results' }">
+
+</simple-table>
+
+
+
+
+
+
 <!--<simple-table-->
              <!--[data]="url"-->
              <!--[extraParams]="params"-->
@@ -22,7 +32,6 @@
               <!--(expandChange)="onExpandChange($event)">-->
 <!--<simple-table #table-->
               <!--[(url)]="url"-->
-              <!--[reqMehtod]="'get'"-->
               <!--[columns]="columns"-->
               <!--(expandChange)="onExpandChange($event)">-->
     <!--<ng-template st-row="htmlRender" let-item>-->
